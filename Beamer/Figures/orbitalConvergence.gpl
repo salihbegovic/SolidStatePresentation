@@ -1,0 +1,21 @@
+#!/usr/bin/env gnuplot
+
+load "./gnuplotrc"
+data = "../data/nvconvergence"
+
+set xrange [5:32]
+set yrange [3.8:6.2]
+
+set xlabel "{N}_{v}/{N}_{occ}" font "CMU Serif Italic, 14"
+set ylabel "Energy (eV)"
+
+set key horizontal maxcolumns 2
+set key at 30,5.90 font "CMU Serif, 12"
+columns = "u 3:4"
+
+plot data @columns i "X"   w lp pt 11 t "X", \
+     data @columns i "C3V" w lp t "C3V", \
+     data @columns i "T"   w lp t "T", \
+     data @columns i "H"   w lp t "H", \
+     data @columns i "V"   w lp t "V"
+

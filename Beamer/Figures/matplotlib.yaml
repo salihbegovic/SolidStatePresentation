@@ -1,0 +1,32 @@
+font.size: 16
+xtick.labelsize: 16
+ytick.labelsize: 16
+
+#font.family: Bitstream Vera Serif
+#font.family: CMU Serif
+font.family: serif
+#font.serif: CMU Serif
+#font.weight: normal
+
+text.color: black
+text.usetex: True
+legend.fancybox: False
+savefig.bbox: tight
+
+#mathtext.cal : cursive
+#mathtext.rm  : serif
+#mathtext.tt  : monospace
+#mathtext.it  : serif:italic
+#mathtext.bf  : serif:bold
+#mathtext.sf  : serif
+
+# Should be 'dejavusans' (default),
+# 'dejavuserif', 'cm' (Computer Modern), 'stix',
+# 'stixsans' or 'custom'
+mathtext.fontset: cm
+
+# The default font to use for math.
+# Can be any of the LaTeX font names, including
+# the special name "regular" for the same font
+# used in regular text.
+mathtext.default: it

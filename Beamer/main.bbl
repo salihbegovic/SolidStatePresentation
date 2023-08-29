@@ -1,0 +1,430 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{nty/global//global/global}
+  \entry{ColorCenters}{article}{}
+    \name{author}{4}{}{%
+      {{hash=GA}{%
+         family={Gallo},
+         familyi={G\bibinitperiod},
+         given={Alejandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Hummel},
+         familyi={H\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=IA}{%
+         family={Irmler},
+         familyi={I\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Grüneis},
+         familyi={G\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GA+1}
+    \strng{fullhash}{GAHFIAGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    {We present an implementation of the equation of motion coupled-cluster
+  singles and doubles (EOM-CCSD) theory using periodic boundary conditions and
+  a plane wave basis set. Our implementation of EOM-CCSD theory is applied to
+  study F-centers in alkaline earth oxides employing a periodic supercell
+  approach. The convergence of the calculated electronic excitation energies
+  for neutral color centers in MgO, CaO, and SrO crystals with respect to the
+  orbital basis set and system size is explored. We discuss extrapolation
+  techniques that approximate excitation energies in the complete basis set
+  limit and reduce finite size errors. Our findings demonstrate that EOM-CCSD
+  theory can predict optical absorption energies of F-centers in good agreement
+  with experiment. Furthermore, we discuss calculated emission energies
+  corresponding to the decay from triplet to singlet states responsible for the
+  photoluminescence properties. Our findings are compared to experimental and
+  theoretical results available in the literature.}%
+    }
+    \verb{doi}
+    \verb 10.1063/5.0035425
+    \endverb
+    \verb{eprint}
+    \verb https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/5.0035425/155843
+    \verb 04/064106\_1\_online.pdf
+    \endverb
+    \field{issn}{0021-9606}
+    \field{number}{6}
+    \field{pages}{064106}
+    \field{title}{{A periodic equation-of-motion coupled-cluster implementation
+  applied to F-centers in alkaline earth oxides}}
+    \verb{url}
+    \verb https://doi.org/10.1063/5.0035425
+    \endverb
+    \field{volume}{154}
+    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{month}{02}
+    \field{year}{2021}
+  \endentry
+
+  \entry{FiniteSize}{article}{}
+    \name{author}{5}{}{%
+      {{hash=GT}{%
+         family={Gruber},
+         familyi={G\bibinitperiod},
+         given={Thomas},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=LK}{%
+         family={Liao},
+         familyi={L\bibinitperiod},
+         given={Ke},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Tsatsoulis},
+         familyi={T\bibinitperiod},
+         given={Theodoros},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Hummel},
+         familyi={H\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gr\"uneis},
+         familyi={G\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{GT+1}
+    \strng{fullhash}{GTLKTTHFGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \verb{doi}
+    \verb 10.1103/PhysRevX.8.021043
+    \endverb
+    \field{issue}{2}
+    \field{pages}{021043}
+    \field{title}{Applying the Coupled-Cluster Ansatz to Solids and Surfaces in
+  the Thermodynamic Limit}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevX.8.021043
+    \endverb
+    \field{volume}{8}
+    \field{journaltitle}{Phys. Rev. X}
+    \field{year}{2018}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Tensor}{article}{}
+    \name{author}{3}{}{%
+      {{hash=HF}{%
+         family={Hummel},
+         familyi={H\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TT}{%
+         family={Tsatsoulis},
+         familyi={T\bibinitperiod},
+         given={Theodoros},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Grüneis},
+         familyi={G\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HFTTGA1}
+    \strng{fullhash}{HFTTGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{abstract}{%
+    {We study a tensor hypercontraction decomposition of the Coulomb integrals
+  of periodic systems where the integrals are factorized into a contraction of
+  six matrices of which only two are distinct. We find that the Coulomb
+  integrals can be well approximated in this form already with small matrices
+  compared to the number of real space grid points. The cost of computing the
+  matrices scales as O(N4) using a regularized form of the alternating least
+  squares algorithm. The studied factorization of the Coulomb integrals can be
+  exploited to reduce the scaling of the computational cost of expensive tensor
+  contractions appearing in the amplitude equations of coupled cluster methods
+  with respect to system size. We apply the developed methodologies to
+  calculate the adsorption energy of a single water molecule on a hexagonal
+  boron nitride monolayer in a plane wave basis set and periodic boundary
+  conditions.}%
+    }
+    \verb{doi}
+    \verb 10.1063/1.4977994
+    \endverb
+    \verb{eprint}
+    \verb https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/1.4977994/155251
+    \verb 79/124105\_1\_online.pdf
+    \endverb
+    \field{issn}{0021-9606}
+    \field{number}{12}
+    \field{pages}{124105}
+    \field{title}{{Low rank factorization of the Coulomb integrals for periodic
+  coupled cluster theory}}
+    \verb{url}
+    \verb https://doi.org/10.1063/1.4977994
+    \endverb
+    \field{volume}{146}
+    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{month}{03}
+    \field{year}{2017}
+  \endentry
+
+  \entry{BasisSet}{article}{}
+    \name{author}{4}{}{%
+      {{hash=IA}{%
+         family={Irmler},
+         familyi={I\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gallo},
+         familyi={G\bibinitperiod},
+         given={Alejandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Hummel},
+         familyi={H\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gr\"uneis},
+         familyi={G\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{IA+1}
+    \strng{fullhash}{IAGAHFGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{I}
+    \field{sortinithash}{I}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.123.156401
+    \endverb
+    \field{issue}{15}
+    \field{pages}{156401}
+    \field{title}{Duality of Ring and Ladder Diagrams and Its Importance for
+  Many-Electron Perturbation Theories}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.123.156401
+    \endverb
+    \field{volume}{123}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{2019}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{dow11}{article}{}
+    \name{author}{5}{}{%
+      {{hash=LWK}{%
+         family={Leung},
+         familyi={L\bibinitperiod},
+         given={W.-K.},
+         giveni={W\bibinithyphendelim K\bibinitperiod},
+      }}%
+      {{hash=NRJ}{%
+         family={Needs},
+         familyi={N\bibinitperiod},
+         given={R.\bibnamedelima J.},
+         giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=RG}{%
+         family={Rajagopal},
+         familyi={R\bibinitperiod},
+         given={G.},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Itoh},
+         familyi={I\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=IS}{%
+         family={Ihara},
+         familyi={I\bibinitperiod},
+         given={S.},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {American Physical Society}%
+    }
+    \strng{namehash}{LWK+1}
+    \strng{fullhash}{LWKNRJRGISIS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.83.2351
+    \endverb
+    \field{issue}{12}
+    \field{pages}{2351\bibrangedash 2354}
+    \field{title}{Calculations of Silicon Self-Interstitial Defects}
+    \verb{url}
+    \verb https://link.aps.org/doi/10.1103/PhysRevLett.83.2351
+    \endverb
+    \field{volume}{83}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{year}{1999}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+
+  \entry{Embedding}{article}{}
+    \name{author}{5}{}{%
+      {{hash=ST}{%
+         family={Schäfer},
+         familyi={S\bibinitperiod},
+         given={Tobias},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Gallo},
+         familyi={G\bibinitperiod},
+         given={Alejandro},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=IA}{%
+         family={Irmler},
+         familyi={I\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Hummel},
+         familyi={H\bibinitperiod},
+         given={Felix},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GA}{%
+         family={Grüneis},
+         familyi={G\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ST+1}
+    \strng{fullhash}{STGAIAHFGA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{abstract}{%
+    {A first-principles study of the adsorption of a single water molecule on a
+  layer of graphitic carbon nitride is reported employing an embedding approach
+  for many-electron correlation methods. To this end, a plane-wave based
+  implementation to obtain intrinsic atomic orbitals and Wannier functions for
+  arbitrary localization potentials is presented. In our embedding scheme, the
+  localized occupied orbitals allow for a separate treatment of short-range and
+  long-range correlation contributions to the adsorption energy by a
+  fragmentation of the simulation cell. In combination with unoccupied natural
+  orbitals, the coupled cluster ansatz with single, double, and perturbative
+  triple particle–hole excitation operators is used to capture the
+  correlation in local fragments centered around the adsorption process. For
+  the long-range correlation, a seamless embedding into the random phase
+  approximation yields rapidly convergent adsorption energies with respect to
+  the local fragment size. Convergence of computed binding energies with
+  respect to the virtual orbital basis set is achieved employing a number of
+  recently developed techniques. Moreover, we discuss fragment size convergence
+  for a range of approximate many-electron perturbation theories. The obtained
+  benchmark results are compared to a number of density functional
+  calculations.}%
+    }
+    \verb{doi}
+    \verb 10.1063/5.0074936
+    \endverb
+    \verb{eprint}
+    \verb https://pubs.aip.org/aip/jcp/article-pdf/doi/10.1063/5.0074936/148382
+    \verb 28/244103\_1\_online.pdf
+    \endverb
+    \field{issn}{0021-9606}
+    \field{number}{24}
+    \field{pages}{244103}
+    \field{title}{{Surface science using coupled cluster theory via local
+  Wannier functions and in-RPA-embedding: The case of water on graphitic carbon
+  nitride}}
+    \verb{url}
+    \verb https://doi.org/10.1063/5.0074936
+    \endverb
+    \field{volume}{155}
+    \field{journaltitle}{The Journal of Chemical Physics}
+    \field{month}{12}
+    \field{year}{2021}
+  \endentry
+
+  \entry{Surface}{misc}{}
+    \name{author}{1}{}{%
+      {{hash=TT}{%
+         family={Tsatsoulis},
+         familyi={T\bibinitperiod},
+         given={Theodoros},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Wien}%
+    }
+    \strng{namehash}{TT1}
+    \strng{fullhash}{TT1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Periodic quantum chemical methods for molecule-surface
+  interactions}
+    \verb{url}
+    \verb https://repositum.tuwien.at/handle/20.500.12708/15241
+    \endverb
+    \field{journaltitle}{reposiTUm}
+    \field{year}{2020}
+    \warn{\item Invalid format of field 'month'}
+  \endentry
+\enddatalist
+\endinput
