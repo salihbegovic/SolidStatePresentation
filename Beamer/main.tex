@@ -332,6 +332,10 @@
 	\item Molecule surface interactions~\cite{Surface}
 	\item Excited states of defects~\cite{ColorCenters}
     \end{itemize}
+	\vspace{3mm}
+	\begin{center}
+		Homemade coupled cluster program for solids (cc4s)
+	\end{center}
 \end{frame}
 
 %==================INTRODUCITON CQC==================
@@ -664,9 +668,12 @@ Or in second quantisation
 \label{fig:Cells}
 \end{center}
 \begin{itemize}
-	\item Defect atoms are red 
-	\item Their nearest neighbors are yellow
-	\item The bonds between them are orange
+	\item For benchmarking reasons two more interstitials are added 
+	\item the vacancy (V) and the DFT-PBE hexagonal (C3V)
+	\vspace{1mm}
+	\begin{center}
+		All cells are relaxed using DFT-PBE
+	\end{center}
 \end{itemize}
 \end{figure}
 
@@ -677,6 +684,7 @@ Or in second quantisation
 
 \begin{frame}[plain]{How to calculate the Formation energy?}
 	Give the formula for the formation energy
+	Maybe a promo about error cancelation
 \end{frame}
 
 % =========================================
@@ -689,17 +697,17 @@ Or in second quantisation
 % =========================================
 %====================================================
 
-\begin{frame}[plain]{Basis Set Correction}
-	give the plot
+\begin{frame}[plain]{Finite size correction Correction}
+	differentiate the defect concentration
+	the gamma point correction (finite size correction)
+	and the twist averaging
 \end{frame}
 
 % =========================================
 %====================================================
 
-\begin{frame}[plain]{Finite size correction Correction}
-	differentiate the defect concentration
-	the gamma point correction (finite size correction)
-	and the twist averaging
+\begin{frame}[plain]{Basis Set Correction}
+	give the plot
 \end{frame}
 
 % =========================================

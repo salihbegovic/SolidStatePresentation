@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.27)  29 AUG 2023 16:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.27)  29 AUG 2023 16:45
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1773,48 +1773,48 @@ Overfull \hbox (143.67494pt too wide) detected at line 296
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 3
-35.
+39.
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 3
-35.
+39.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-335.
+339.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-335.
+339.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 335.
+(Font)              <10.95> on input line 339.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 335.
+(Font)              <8> on input line 339.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 335.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 335
+(Font)              <6> on input line 339.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 339
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 335
+LaTeX Font Info:    Trying to load font information for U+msb on input line 339
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 335.
+ut line 339.
 
 (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
@@ -1857,18 +1857,18 @@ thkerncmss.
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 631.
+(Font)              <10> on input line 635.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 631.
+(Font)              <7> on input line 635.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 631.
+(Font)              <5> on input line 635.
  [21
 
 ]
 <Figures/ab.pdf, id=255, 255.07797pt x 114.89726pt>
 File: Figures/ab.pdf Graphic file (type pdf)
 <use Figures/ab.pdf>
-Package pdftex.def Info: Figures/ab.pdf  used on input line 652.
+Package pdftex.def Info: Figures/ab.pdf  used on input line 656.
 (pdftex.def)             Requested size: 284.52756pt x 128.16861pt.
  [22
 
@@ -1876,13 +1876,13 @@ Package pdftex.def Info: Figures/ab.pdf  used on input line 652.
 <Figures/c.pdf, id=294, 129.93945pt x 103.37521pt>
 File: Figures/c.pdf Graphic file (type pdf)
 <use Figures/c.pdf>
-Package pdftex.def Info: Figures/c.pdf  used on input line 673.
+Package pdftex.def Info: Figures/c.pdf  used on input line 680.
 (pdftex.def)             Requested size: 142.26378pt x 113.17992pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:Cells}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.673 \end{frame}
+l.680 \end{frame}
                   [23
 
  <./Figures/c.pdf>] [24
@@ -1897,7 +1897,7 @@ l.673 \end{frame}
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 731.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 739.
  [29
 
 ] [30
@@ -1918,7 +1918,7 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-Overfull \vbox (0.5293pt too high) detected at line 823
+Overfull \vbox (0.5293pt too high) detected at line 831
  []
 
 
@@ -1931,14 +1931,14 @@ Overfull \hbox (143.67494pt too wide) has occurred while \output is active
 ] [35
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 83
-5.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 84
+3.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 
 LaTeX Font Warning: Font shape `T1/lmss/m/sc' in size <10.95> not available
-(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 835.
+(Font)              Font shape `T1/lmr/m/sc' tried instead on input line 843.
 
 
 Overfull \hbox (143.67494pt too wide) has occurred while \output is active
@@ -2003,7 +2003,7 @@ pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/
 type1/public/lm/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (38 pages, 671339 bytes).
+Output written on main.pdf (38 pages, 671497 bytes).
 PDF statistics:
  628 PDF objects out of 1000 (max. 8388607)
  453 compressed objects within 5 object streams
