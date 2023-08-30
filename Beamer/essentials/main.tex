@@ -10,12 +10,8 @@
 
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
-\usepackage{subfig}
 %\usepackage{lmodern}
 \usepackage{comment}
-\usepackage{tabularx}
-\newcommand\pro{\item[$+$]}
-\newcommand\con{\item[$-$]}
 \usetheme{Madrid}
 %\usepackage[maxbibnames=99]{biblatex}
 \definecolor{cvut_navy}{HTML}{0065BD}
@@ -684,194 +680,165 @@ Or in second quantisation
 \end{frame}
 
 % =========================================
-%======formation energy how to get there=============
+%====================================================
 
 \begin{frame}[plain]{How to calculate the Formation energy?}
-	\begin{enumerate}
-		\item Enegy of the Pristine cell $E_{\mathrm{bulk}}$
-		\item Energy of the interstitial cell $E_{\mathrm{int}}$
-	\end{enumerate}
-	\vspace{5mm}
-    	\begin{alertblock}{Formation Energy}
-		\begin{equation*}
-			E_{\mathrm{f}} = E_{\mathrm{int}} - \frac{N_{\mathrm{int}}}{N_{\mathrm{bulk}}}E_{\mathrm{bulk}}
-		\end{equation*}
-    	\end{alertblock}
-	\vspace{5mm}
-	\begin{center}
-		Energies can be calculated at any level of theory
-	\end{center}
+	Give the formula for the formation energy
+	Maybe a promo about error cancelation
 \end{frame}
 
 % =========================================
-%============ccsd(t) energy how to get there=========
+%====================================================
 
-\begin{frame}[plain]{Workflow leading us to the converged CCSD(T) energies}
-% Define block styles
-\tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=4em,
-  text centered, rounded corners, minimum height=4em]
-\tikzstyle{blockred} = [rectangle, draw, fill=red!20, text width=10em,
-  text centered, rounded corners, minimum height=6em] \tikzstyle{line}
-= [draw, -latex']
-
-\begin{figure}
-\begin{center}
-  \begin{tikzpicture}[node distance = 2cm, auto]
-  \node [blockred] (HF) {HF (VASP) \\ \noindent\rule{\linewidth}{0.4pt} \\ $\Gamma$-point};
-  \node [blockred, right of=HF, node distance=5cm] (HF7) {HF increased k-point sampling (VASP) \\ \noindent\rule{\linewidth}{0.4pt} \\ 7x7x7 k-points};
-  \node [blockred, below of=HF, node distance=3cm] (CC4S) {CCSD(T) (CC4S) \\ \noindent\rule{\linewidth}{0.4pt} \\ with Basis-set and Finite-size correction};
-  \node [blockred, below of=HF7, node distance=3cm] (FORM) {Formation energy};
-
-  \path [line] (HF) -- (CC4S);
-  \path [line] (HF) -- (HF7);
-  \path [line] (HF7) -- (FORM);
-  \path [line] (CC4S) -- (FORM);
-\end{tikzpicture}
-	\caption{Schematic representation of the workflow}
-\end{center}
-\end{figure}
-	
+\begin{frame}[plain]{Workflow leading us to CCSD(T) energies}
+	give the workflow chart leading to the CC results
 \end{frame}
 
 % =========================================
-%=============finite size error======================
+%====================================================
 
-\begin{frame}[plain]{Finite Size Incompleness Error}
-	Due to the periodic supercell approach, we are always having a defined defect concentration
-	\begin{itemize}
-		\item Finite size error due to periodic images $\to$ bigger cell 
-		\item Finite size error due finite number of kpoints
-			\begin{itemize}
-				\item in the case of HF $\to$ increase kpoints
-				\item in the case of CCSD(T) $\to$ finite size correction\cite{FiniteSize}
-			\end{itemize}
-		\item Correction is done on one k-point $\to$ twist averaging 
-			\begin{itemize}
-				\item Calculate the CCSD(T) correction at random k-points
-				\item Take a look at the average and standard deviation 
-			\end{itemize}
-	\end{itemize}
+\begin{frame}[plain]{Finite size correction Correction}
+	differentiate the defect concentration
+	the gamma point correction (finite size correction)
+	and the twist averaging
 \end{frame}
 
 % =========================================
-%===========basis set error==========================
+%====================================================
 
-\begin{frame}[plain]{Basis Set Incompleteness Error}
-	The Basis set incompleteness error comes mostly from the electron-electron cusp
-	\begin{itemize}
-		\item Pair-specific cusp correction in cc4s, focal-point correction (FPC)\cite{BasisSet}
-	\end{itemize}
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=.8\textwidth]{./Figures/BasisSetCorrection.pdf}
-  \caption{%
-    CCSD formation energy of the X interstitial.
-    A $\Gamma$-centered cubic mesh was used.}%
-    \label{fig:basisSetConvergence}
-\end{figure}
-
+\begin{frame}[plain]{Basis Set Correction}
+	give the plot
 \end{frame}
 
 % =========================================
-%============Results=================================
+%====================================================
 
 \begin{frame}[plain]{Results}
-\begin{table}
-\centering
-        \caption{Computed and converged HF, CCSD and CCSD(T) formation energies including
-        all reported corrections, compared to QMC~\cite{QMCRef}, RPA~\cite{Kresse}, PBE~\cite{Kresse},
-        LDA~\cite{dow7,dow10}, $G_0W_0$~\cite{dow7} and HSE~\cite{dow10} from the literature
-        and also experimental data~\cite{exp2,exp4,exp5,exp6,exp7}. %All results have been obtained for the 16/17 atom cells
-%        except RPA(216), which employed 216/217 atom cells.
-        \label{table4}}
-\resizebox{\textwidth}{!}{
-\begin{tabular}{lcccccccccccc}
-\toprule
-Cell            &HF       &CCSD     &CCSD(T)    &QMC    &QMC (nobf)     &$G_0W_0$&RPA   &RPA (216)      &HSE    &PBE    &LDA    &Exp.           \\
-\midrule
-%C3V            &8.502          &5.788          &4.998          &       &               &4.51   &4.39   &4.36           &       &3.64   &3.36   &               \\
-X               &7.930          &5.295          &4.535          &4.4    &4.9            &4.46   &4.27   &4.2            &4.46   &3.56   &3.29   &               \\
-H               &8.162          &5.559          &4.810          &4.7    &4.9            &4.4    &4.45   &4.33           &4.82   &3.74   &3.4    &4.2 - 4.7      \\
-T               &9.954          &7.127          &6.316          &5.1    &5.2            &       &4.53   &4.93           &4.92   &3.66   &3.56   &               \\
-%V              &5.554          &5.070          &4.779          &       &               &       &3.47   &4.39           &       &3.02   &       &2.1 â€“ 4.0      \\
-\bottomrule
-\end{tabular}}
-\end{table}
-	\vspace{4mm}
-	\begin{itemize}
-		\item X and H look good
-		\item T does not look good
-	\begin{itemize}
-		\item Multiconfigurational character?
-	\end{itemize}
-	\end{itemize}
+	give the final table and discuss it
 \end{frame}
 
 % =========================================
-%==================Outlook==================
-\section{Outlook}
+%====================================================
+
+\begin{frame}[plain]{Tabelas}
+    \begin{table}[]
+        \centering
+        \begin{tabular}{|c|c|c|}
+            \hline
+            Modelo & Acurácia \\
+            \hline
+            SVM & 0.88 \\
+            \textit{k}-NN & 0.80 \\
+            Naive Bayes & 0.83 \\
+            MLP & 0.95 \\
+            \hline
+        \end{tabular}
+        \caption{Exemplo de Tabela}
+        \label{tab:my_label}
+    \end{table}
+\end{frame}
+
+% =========================================
+
+\begin{frame}[plain]{Listagem}
+    Listagem de itens com \textit{itemize}:
+    \begin{itemize}
+        \item Item 1
+        \item Item 2
+        \item Item 3
+    \end{itemize}
+    \vspace{1cm}
+    Listagem de itens com \textit{enumerate}:
+    \begin{enumerate}
+        \item Item 1
+        \item Item 2
+        \item Item 3
+    \end{enumerate}
+\end{frame}
+
+% =========================================
+
+\begin{frame}[plain]{Blocos}
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.
+    
+    \begin{alertblock}{Bloco}
+        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus.
+    \end{alertblock}
+
+    Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.
+\end{frame}
+
+% =========================================
+
+\begin{frame}[plain]{Notação Matemática}
+    \begin{alertblock}{Distribuição Normal}
+        \begin{equation*}
+        f(x) = \frac{1}{\sigma\sqrt{2 \pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
+        \end{equation*}
+    \end{alertblock}
+
+    \begin{alertblock}{Transformada de Fourier Discreta}
+        \begin{equation*}
+        X(\omega) = \sum^{L-1}_{n=0} x_n e^{-i\omega n}, \quad x \in \mathbb{R}^L
+        \end{equation*}
+    \end{alertblock}
+\end{frame}
+
+% =========================================
+
+\begin{frame}[plain]{Algoritmos}
+    Algoritmo \textit{Selection Sort}, que ordena um vetor $x\in\mathbb{R}^N$ em tempo $\mathcal{O}(N^2)$:
+    
+    \vspace{0.5cm}
+    
+    \begin{algorithmic}
+        \For{$i \in [0,...,N-1]$}
+            \State $m \gets i$
+            \For{$j \in [i+1,...,N-1]$}
+                \If{$x_j < x_m$}
+                    \State $m \gets j$
+                \EndIf
+            \EndFor
+            \If{$x_i \neq x_m$}
+                \State $a \gets x_i$
+                \State $x_i \gets x_m$
+                \State $x_m \gets a$
+            \EndIf
+        \EndFor
+    \end{algorithmic}
+\end{frame}
+
+% =========================================
+
+\begin{frame}[fragile]{Código-fonte}
+    Código-fonte do algoritmo \textit{Selection Sort} em Python:
+
+    \begin{verbatim}
+lista = [3,2,1]
+for i in range(len(lista)):
+    menor = i
+    for j in range(i+1,len(lista)):
+        if lista[j] < lista[menor]:
+                menor = j
+    if lista[i] != lista[menor]:
+            aux = lista[i]
+            lista[i] = lista[menor]
+            lista[menor] = aux
+print(lista)
+    \end{verbatim}
+    
+    \alert{Utilize ``fragile'' ao invés de ``plain'' ao definir um \textit{frame} que contém um \textit{verbatim}}
+\end{frame}
+
+\section{Conclusão}
+
+% =========================================
+
 \begin{frame}[noframenumbering,plain]
     \begin{center}
-    \Huge {\textcolor{faeng_blue}{Outlook}} 
-    \vspace{5mm} 
-    \hrule 
+    \Huge \textcolor{faeng_blue}{Obrigado!} 
     \end{center}
 \end{frame}
-%====================================================
-%====================================================
-
-\begin{frame}[plain]{Outlook}
-	\begin{itemize}
-		\item Coupled Cluster is one of the most accurate Wavefunction theories in Quantum Chemistry
-		\pro Can be used for systems with $\approx 50$ atoms
-		\pro ab initio - no parameters
-		\pro size extensitivity - perfect for solid state physics
-		\con only applicable to weakly correlated systems
-		\con gets expensive fast - CCSD(T) $O(N^{7})$
-	\end{itemize}
-\end{frame}
-
-% =========================================
-%==================thank you================
-\begin{frame}[plain]{Thank you!}
-    \begin{center}
-	    Thank you
-    \end{center}
-\begin{figure}[htb]
-  \centering
-  \includegraphics[width=.8\textwidth]{./Figures/group2019.png}
-	\caption{Adreas Grüneis, Nikolaos Masios, Theodoros Tsatsoulis, Felix Hummel, Andreas Irmler, Alejandro Gallo, Faruk Salihbegovic, Tobias Schäfer}
-\end{figure}
-%\begin{figure}[htb]
-%  \includegraphics[width=.2\textwidth]{./figs/TU_Logo.pdf}
-%\end{figure}
-%\begin{figure}[htb]
-%  \includegraphics[width=.2\textwidth]{./figs/ERC_Logo.png}
-%\end{figure}
-
-\begin{figure}%
-    \centering
-    \subfloat[]{{\includegraphics[width=3cm]{./figs/TU_Logo.pdf} }}%
-    \subfloat[]{{\includegraphics[width=2cm]{./figs/ERC_Logo.png} }}%
-\end{figure}
-
-\end{frame}
-%====================================================
-% =========================================
-
-%\begin{frame}[plain]{Blocos}
-%\end{frame}
-
-% =========================================
-
-
-% =========================================
-
-
-% =========================================
-
-
-% =========================================
 
 \printbibliography
 
