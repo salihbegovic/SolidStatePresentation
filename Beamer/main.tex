@@ -338,7 +338,7 @@
     \end{itemize}
 	\vspace{3mm}
 	\begin{center}
-		Homemade coupled cluster program for solids (cc4s)
+		\textbf{Homemade coupled cluster program for solids (cc4s)}
 	\end{center}
 \end{frame}
 
@@ -471,12 +471,12 @@ Or in second quantisation
 	\end{equation*}	
     	\begin{alertblock}{Blochs Theorem}
 		\begin{equation*}
-       			\psi_{\vec{k}}(\vec{r})=u_{\vec{k}}(\vec{r})e^{i\vec{k}\vec{r}}.
+       			\psi_{\vec{k}}(\vec{r})=u_{\vec{k}}(\vec{r})e^{i\vec{k}\vec{r}}
 		\end{equation*}
     	\end{alertblock}
-	We work with plane-waves.
+	We work with plane-waves
 	\begin{equation*}
-       		\chi_{\vec{k}}(\vec{r})=e^{i\vec{k}\vec{r}}.
+       		\chi_{\vec{k}}(\vec{r})=e^{i\vec{k}\vec{r}}
 	\end{equation*}
 \end{frame}
 %====================================================
@@ -540,7 +540,7 @@ Or in second quantisation
 		\begin{equation*}
 			\hat{T} = \underbrace{\sum_{ai}t_i^a \hat{c}^{\dagger}_a \hat{c}_i}_{\hat{T}_1} + \underbrace{\sum_{abij}t_{ij}^{ab} \hat{c}^{\dagger}_a \hat{c}^{\dagger}_b \hat{c}_j \hat{c}_i}_{\hat{T}_2} + \dots
 		\end{equation*}
-		\item by truncating the $\hat{T}$ operator at $\hat{T}_2$ we do CCSD
+		\item By truncating the $\hat{T}$ operator at $\hat{T}_2$ we do CCSD
 	\end{itemize}
 \end{frame}
 
@@ -559,7 +559,7 @@ Or in second quantisation
 			\frac{1}{2!}\hat{T}^2_1}_{\mathrm{CISD}} + \frac{1}{2!}\left(\underbrace{\hat{T}_2^2}_{\mathrm{quad.}} + 
 			\underbrace{\hat{T}_1\hat{T}_2 + \hat{T}_2\hat{T}_1}_{triples}\right) + \dots \right)
 		\end{equation*}
-		\item Exact two electron correlation
+		\item Build in size-extensivity
 		\item Coefficient equations are nonlinear 
 		\item Have to be solved in a iterative way 
 	\end{itemize}
@@ -579,7 +579,7 @@ Or in second quantisation
 	\end{itemize}
 	\vspace{10mm}
 	\begin{center}
-		CCSD(T) is the golden standard of quantum chemistry
+		\textbf{CCSD(T) is the golden standard of quantum chemistry}
 	\end{center}
 \end{frame}
 
@@ -634,7 +634,7 @@ Or in second quantisation
 	\end{itemize}
 	\vspace{10mm}
 	\begin{center} 
-		In both cases we need extrapolation and correction schemes
+		\textbf{In both cases we need extrapolation and correction schemes}
 	\end{center} 
 \end{frame}
 
@@ -742,8 +742,8 @@ Or in second quantisation
 		\item Finite size error due to periodic images $\to$ bigger cell 
 		\item Finite size error due finite number of kpoints
 			\begin{itemize}
-				\item in the case of HF $\to$ increase kpoints
-				\item in the case of CCSD(T) $\to$ finite size correction\cite{FiniteSize}
+				\item In the case of HF $\to$ increase kpoints
+				\item In the case of CCSD(T) $\to$ finite size correction\cite{FiniteSize}
 			\end{itemize}
 		\item Correction is done on one k-point $\to$ twist averaging 
 			\begin{itemize}
@@ -766,7 +766,7 @@ Or in second quantisation
   \includegraphics[width=.8\textwidth]{./Figures/BasisSetCorrection.pdf}
   \caption{%
     CCSD formation energy of the X interstitial.
-    A $\Gamma$-centered cubic mesh was used.}%
+    At the $\Gamma$-point}%
     \label{fig:basisSetConvergence}
 \end{figure}
 
@@ -824,10 +824,10 @@ T               &9.954          &7.127          &6.316          &5.1    &5.2    
 	\begin{itemize}
 		\item Coupled Cluster is one of the most accurate Wavefunction theories in Quantum Chemistry
 		\pro Can be used for systems with $\approx 50$ atoms
-		\pro ab initio - no parameters
-		\pro size extensitivity - perfect for solid state physics
-		\con only applicable to weakly correlated systems
-		\con gets expensive fast - CCSD(T) $O(N^{7})$
+		\pro Ab initio - no parameters
+		\pro Size extensitivity - perfect for solid state physics
+		\con Only applicable to weakly correlated systems
+		\con Gets expensive fast - CCSD(T) $O(N^{7})$
 	\end{itemize}
 \end{frame}
 
